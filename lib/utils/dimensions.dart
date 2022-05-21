@@ -5,30 +5,34 @@ class Dimensions {
   static double screenWidth = Get.context!.width;
 
   static double pageView = screenHeight / 2.64;
-  static double pageViewContainer = screenHeight / 3.418;
+  static double pageViewContainer = screenHeight / 3.84;
   static double pageViewTextContainer = screenHeight / 7.03;
 
   // Dynamic Height Padding and Margin
-  static double height10 = screenHeight / 75.2;
-  static double height15 = screenHeight / 50.13;
-  static double height20 = screenHeight / 37.6;
-  static double height30 = screenHeight / 25.06;
-  static double height45 = screenHeight / 16.71;
+  static double height10 = screenHeight / 84.4;
+  static double height15 = screenHeight / 56.27;
+  static double height20 = screenHeight / 42.2;
+  static double height30 = screenHeight / 28.13;
+  static double height45 = screenHeight / 18.26;
 
   // Dynamic Width Padding and Margin
-  static double width10 = screenHeight / 75.2;
-  static double width15 = screenHeight / 50.13;
-  static double width20 = screenHeight / 37.6;
-  static double width30 = screenHeight / 25.06;
+  static double width10 = screenHeight / 84.4;
+  static double width15 = screenHeight / 56.27;
+  static double width20 = screenHeight / 42.2;
+  static double width30 = screenHeight / 28.13;
 
   // Font Size
-  static double font20 = screenHeight / 37.6;
+  static double font20 = screenHeight / 42.2;
 
   // Radius Size
-  static double radius15 = screenHeight / 50.13;
-  static double radius20 = screenHeight / 37.6;
-  static double radius30 = screenHeight / 25.06;
+  static double radius15 = screenHeight / 54.27;
+  static double radius20 = screenHeight / 42.2;
+  static double radius30 = screenHeight / 28.13;
 
-  // Icons Size
-  static double iconSize24 = screenHeight / 31.33;
+  // Icon Size
+  static double iconSize24 = screenHeight / 35.17;
+
+  // List View Size
+  static double listViewImgSize = screenWidth / 3.25;
+  static double listViewTextContSize = screenWidth / 3.9;
 }
