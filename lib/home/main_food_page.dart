@@ -15,8 +15,6 @@ class MainFoodPage extends StatefulWidget {
 class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
-    print(
-        "Current height is : " + MediaQuery.of(context).size.height.toString());
     return Scaffold(
       body: Column(
         children: [
@@ -54,11 +52,12 @@ class _MainFoodPageState extends State<MainFoodPage> {
                   ),
                   Center(
                     child: Container(
-                      width: 45,
-                      height: 45,
-                      child: const Icon(
+                      width: Dimensions.height45,
+                      height: Dimensions.height45,
+                      child: Icon(
                         Icons.search,
                         color: Colors.white,
+                        size: Dimensions.iconSize24,
                       ),
                       decoration: BoxDecoration(
                         borderRadius:
