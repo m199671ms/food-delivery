@@ -15,6 +15,7 @@ class PopularFoodDetail extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Stack(
         children: [
+          // Background Image
           Positioned(
             left: 0,
             right: 0,
@@ -29,6 +30,7 @@ class PopularFoodDetail extends StatelessWidget {
               ),
             ),
           ),
+          // Icons Widget
           Positioned(
             top: Dimensions.height45,
             left: Dimensions.width20,
@@ -41,6 +43,7 @@ class PopularFoodDetail extends StatelessWidget {
               ],
             ),
           ),
+          //  Introduction About Food
           Positioned(
             left: 0,
             right: 0,
@@ -73,6 +76,7 @@ class PopularFoodDetail extends StatelessWidget {
               ),
             ),
           ),
+          // Expandable Text Widget
         ],
       ),
       bottomNavigationBar: Container(
@@ -106,7 +110,7 @@ class PopularFoodDetail extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.remove,
                     color: AppColors.singColor,
                   ),
@@ -117,7 +121,7 @@ class PopularFoodDetail extends StatelessWidget {
                   SizedBox(
                     width: Dimensions.width10 / 2,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.add,
                     color: AppColors.singColor,
                   ),
