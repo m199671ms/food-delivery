@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/utils/colors.dart';
 import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/small_text.dart';
 
@@ -34,7 +35,45 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: secondHalf.isEmpty ? SmallText(text: firstHalf) : Column(),
+      child: secondHalf.isEmpty
+          ? SmallText(
+              text: firstHalf,
+              size: Dimensions.font16,
+              color: AppColors.pageColor,
+            )
+          : Column(
+              children: [
+                SmallText(
+                  text: hiddenText
+                      ? (firstHalf + "...")
+                      : (firstHalf + secondHalf),
+                  size: Dimensions.font16,
+                  color: AppColors.pageColor,
+                  height: 1.8,
+                ),
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      hiddenText = !hiddenText;
+                    });
+                  },
+                  child: Row(
+                    children: [
+                      SmallText(
+                        text: hiddenText ? "Show More" : "Show Less",
+                        color: AppColors.mainColor,
+                      ),
+                      Icon(
+                        hiddenText
+                            ? Icons.arrow_drop_down
+                            : Icons.arrow_drop_up,
+                        color: AppColors.mainColor,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
     );
   }
 }
