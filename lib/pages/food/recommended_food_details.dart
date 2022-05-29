@@ -98,7 +98,7 @@ class RecommendedFoodDetails extends StatelessWidget {
                   iconSize: Dimensions.iconSize24,
                 ),
                 BigText(
-                  text: "\$12.88 " + " X " + " 0 ",
+                  text: "\$12.88  X  0 ",
                   color: AppColors.mainBlackColor,
                   size: Dimensions.font26,
                 ),
